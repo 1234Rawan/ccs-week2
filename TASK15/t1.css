@@ -1,0 +1,35 @@
+
+.a::before {
+   background-color:rgb(0, 102, 255);
+   width: 340px;
+   height: 220px;
+   content: "";
+   position: absolute;
+   transform: rotate(-10deg);
+   top:10px;
+   z-index: -1;
+}
+.a{
+    background-color: beige;
+    width: 300px;
+    height: 200px;
+    margin: 15px auto;
+    padding: 15px;
+    color: rgb(0, 102, 255);
+    font-size: 50px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+.a::after {
+    background-color: rgb(255, 0, 132);
+    width: 340px;
+    height: 220px;
+    content: "";
+    position: absolute;
+    transform: rotate(10deg);
+    top:10px;
+    z-index: -2;
+ }
