@@ -1,0 +1,52 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(autofill, auto);
+    grid-template-rows: repeat(autofill, auto);
+}
+
+.Rose,.one,.two,.three,.four,.five,.lavender,.Aster,.Azalea,.Black-Eyed {
+    padding: 10px;
+    background-color:white;
+    border-bottom: 5px solid orangered;
+}
+.title {
+    color:black;
+    font-weight: bold;
+}
+.Rose{
+    grid-area: 1/ 1/ span 1/ span 2
+}
+.one{
+    grid-area: 3/2/span 1/ span 2 ;
+}
+
+.three{
+    background-color: black;
+    color: white;
+}
+    .Aster
+    {
+    background-color: black;
+    color: white;
+    grid-area: 1/4/ span 3/span 1 ;
+}
+.Azalea{
+    grid-area:2/1/span 2 /span 1 ;
+}
+.Black-Eyed
+{ grid-area:2/2/span 1/ span 2 ;
+    background-color: black;
+    color: white;   
+}
+.title1,.three2,.title3{
+    color: white;
+}

@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.layout{
+ height:100vh;
+    background-color: #eee;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 30px auto 30px;
+    grid-template-areas:"he he he he he he he he"
+    "section section section section section section aside aside "
+    "footer footer footer footer footer footer footer footer";
+    background-color: #eee;
+    display: grid;
+   justify-content: center;
+
+}
+header::before{
+    content: "header";
+}
+header{
+    background-color: rgb(4, 231, 247);
+    grid-area: he;
+    color: white;
+    padding: 5px;
+}
+section::before{
+    content: "section";
+   
+}
+section{
+    color:white;
+    background-color: orangered;
+    grid-area: section;
+    padding: 5px;
+}
+aside::before{
+    content: "aside";
+}
+aside{
+    color:white;
+    background-color: rgb(35, 70, 145);
+    grid-area: aside;
+    padding: 5px;
+}
+footer::before{
+    content: "footer";
+    
+}
+footer{
+    color:white;
+    background-color: rgb(97, 188, 112);
+    grid-area: footer;
+    padding: 5px;
+}
